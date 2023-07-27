@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <h1><a href="#"><img src="#" alt=""></a>포인핸드</h1>
         <nav>
-            <ul>
+            <ul><!-- 태블릿, 데스크탑 메인메뉴 -->
                 <li><a href="#">포인핸드란?</a></li>
                 <li><a href="#">입양문의</a></li>
                 <li><a href="#">보호소오는길</a></li>
@@ -23,7 +24,17 @@
                 <span></span><span></span><span></span>
             </a>
         </nav>
+        <div class="m_nav_open">
+            <button id="close" type="button" title="모바일 메뉴 닫기"><i class="fa-solid fa-x"></i></button>
+            <ul><!-- 모바일 메인메뉴 -->
+                <li><a href="#">포인핸드란?</a></li>
+                <li><a href="#">입양문의</a></li>
+                <li><a href="#">보호소오는길</a></li>
+                <li><a href="#">초보집사 도움말</a></li>
+                <li><a href="#">행사/이벤트</a></li>
+            </ul>
+        </div>
     </header>
-    <main></main>
+    <script src="./script/script.js"></script>
 </body>
 </html>
