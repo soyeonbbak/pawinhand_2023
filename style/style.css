@@ -5,6 +5,7 @@ header {
     align-items: center;
     background: aqua;
     max-width: 1160px ; height: 100px; margin: 0 auto;
+    position:relative;
 }
 header h1 {
     background: yellow;
@@ -30,7 +31,6 @@ header nav ul li a{
 header .m_nav_open {
     display: none;
     position: absolute; top: 100px; left: 0;
-    margin: 0 15px; 
     text-align: center;
     padding: 45px 0; /* width: calc(100% - 30px); */
     background: lime; width: 100%;
