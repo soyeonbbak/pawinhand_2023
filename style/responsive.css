@@ -4,12 +4,16 @@
 @media screen and (max-width:1160px) {
     /* 1160px 이하일 경우 좌우 15px 여백 적용 */
     header {width: calc(100% - 15px);}
+    /* main #pawin_slide {width: calc(100% - 15px);} */
 }/* 1160 end */
 @media screen and (max-width:900px) {
+
     header nav ul {display: none;}
     header nav .m_nav {
         display: flex;
         width: 40px; height: 40px;
+        /* swiper-slide prv, next, 기본 css(position:absolute)내장 */
+        /* 위치를 움직이고 싶다면 position속성 추가작성없이 방향값추가 */
         background: lime;
         flex-flow: column nowrap;
         justify-content:space-between;
@@ -24,6 +28,11 @@
     header nav .m_nav span:nth-child(3) {}
 /* m_nav_open */
     header .m_nav_open {display: bloxk;}
+    /* pawin-slide */
+    /* 반응형웹의 슬라이드는 높이 고정 슬라이드의 경우 데스크탑, 모바일용의 이미지를 따로 제작하고 @media 모바일조건에서 m이미지로 변경하는 경로를 작성한다. */
+    main #pawin_slide .swiper-wrapper .slide1 {
+        background: url(../img/pawin_slide_m.jpg) center;
+    }
 }/* 900이하일 때는 mnavopen이 보이게한다. */
 
 /* 900 end */

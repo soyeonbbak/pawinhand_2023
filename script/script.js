@@ -31,17 +31,24 @@ close.addEventListener('click',function(){
 const pawin_slide = new Swiper('#pawin_slide',{
     //자동재생
     autoplay:{
-        delay:3000, //슬라이드 간격(밀리초) 기본3초
+        delay:10000, //슬라이드 간격(밀리초) 기본3초
     disableOnInteraction:false,//버튼 클릭 후 자동재생 유지
     },
     loop:true, //자연스럽게 한 방향으로 넘어가듯이 하기.
-    effect:'fade', //제자리 변경 슬라이드 효과
+    direction:'horizontal',
+    //effect:'fade', //제자리 변경 슬라이드 효과
     //direction:'vertical', //방향 아래로 바꾸기.
     navigation: {
         nextEl: '#pawin_slide .swiper-button-next',
         prevEl: '#pawin_slide .swiper-button-prev',
     },
 });
+const pawin_slide2 = new Swiper('#pawin_slide2',{
+    autoplay:{delay:3000,
+    disableOnInteraction:false},
+    effect:'fade',
+    loop:true, direction:'horizontal',
+})
 const test = new Swiper('#test',{
     autoplay:{delay:1000},
     direction:'vertical',
@@ -52,4 +59,9 @@ const test = new Swiper('#test',{
         nextEl: '#test .swiper-button-next',
         prevEl: '#test .swiper-button-prev',
     }
+})
+// 입양 정보 slide
+const dog_info_slide = new Swiper('#dog_info_slide',{
+    slidesPerView:4, //한 번에 슬라이드가 4개 보이는 명령어.
+    spaceBetween:20,//여백
 })
