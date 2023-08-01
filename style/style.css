@@ -98,6 +98,7 @@ main #pawin_slide .swiper-button-next::after {
 #test {
     width: 1160px; height: 300px;
     background: red;
+    display: none;
 }
 #test .swiper-wrapper .sle1 {
     background: url(https://picsum.photos/id/11/1160);
@@ -137,5 +138,6 @@ main .dog_info {
 }
 main #dog_info_slide {
     background: pink;
-    width: 1160px; margin: 0 auto;
+    width: 100%; margin: 0 auto;
+    
 }

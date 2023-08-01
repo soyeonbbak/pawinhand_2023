@@ -62,6 +62,16 @@ const test = new Swiper('#test',{
 })
 // 입양 정보 slide
 const dog_info_slide = new Swiper('#dog_info_slide',{
-    slidesPerView:4, //한 번에 슬라이드가 4개 보이는 명령어.
+    slidesPerView:'auto',//breakpoint 옵션 추가시 'auto'로 설정. 그렇지 않으면 숫자로 표시 //한 번에 슬라이드가 4개 보이는 명령어.
     spaceBetween:20,//여백
+    //swiper-slide 반응형웹 옵션
+    breakpoints:{
+        //해상도:{옵션:값} 작은값에서 큰값 순서대로 작성하게 되어있음.
+        700:{slidesPerView:2},
+        900:{slidesPerView:3},
+        1160:{slidesPerView:4}//1160px이상일 경우 슬라이드 4개가 보이게 하겠다.
+    },
+    autoplay:{delay:1000},
+    loop:true,
+
 })
