@@ -138,6 +138,7 @@ main .dog_info {
 }
 main #dog_info_slide {
     background: pink;
-    width: 100%; margin: 0 auto;
-    
+    max-width: 1160px; margin: 0 auto;
+    width: calc(100% - 30px);
 }
+main #dog_info_silde .swiper-wrapper .swiper-slide img {width: 100%;}
